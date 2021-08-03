@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Oleksandra Basheva">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="https://www.microsoft.com/favicon.ico?v2" type="image/x-icon">
+    <title>Meet Surface Book 3 – 13.5” or 15” All-In-One Laptop, Tablet & Studio – Microsoft Surface</title>
+    <style>
+   
+ .all-containers{
+     display: flex;
+     height: 55px;
+     padding-left: 17px;
+     margin-top: 15px;
+     margin-left: 28px;
+     margin-bottom: 7px;
+     cursor: pointer;
+     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+ }
+ 
+    #menu__toggle {
+ visibility: hidden;
+}
+    .menu__btn {
+        visibility: hidden;
+  display: flex; 
+  align-items: center;  
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+ .logo-block{
+     display: flex; 
+     position: relative;
+     margin-left: 20px;
+     margin-top: -11px;
+     margin-right: -27px;
+ }
+.symbol::after{
+    content:"\232A";
+    transform: rotate(90deg);
+    position: absolute;
+    font-size: 10px;
+    display: inline-block;
+    color: currentColor;
+    padding-top: 5px;
+    padding-left: 11px;
+}
+.symbol:hover{
+    display: inline-block;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.708);
+}
+.surface{
+    color: rgba(0, 0, 0, 0.708);
+}
+.surface:hover{
+    display: inline-block;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.708);
+}
+.sup:hover{
+    display: inline-block;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.708);
+}
+.right-side-bar{ 
+float: inline-end;
+}
+.right-side-bar li{
+    justify-content: left;
+    margin-left: 15px;
+}
+.bar li{
+    margin-left: 37px;
+}
+nav{
+    font-size: 12px;
+    color: rgb(74, 74, 74);
+    height: 100px;
+	display: inline-block;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+}
+.separator{
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.879);
+    margin-top: 5px;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.cart {
+    margin-top: -15px;
+}
+.search{
+    margin-top: -10px;
+    padding-left: 15px;
+}
+.registration{
+    margin-top: -15px;
+}
+@media screen and (max-width: 859px){
+    .logo{
+        margin-left: 200px;
+    }
+    .bar{
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  text-align: center;
+  background-color: #ECEFF1;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+    #menu_toggle{
+        visibility: inherit;
+    }
+    .bar li{
+  display: block;
+  padding: 12px 24px;
+  text-align: start;
+  color: rgb(58, 58, 58);
+  font-weight: 400;
+  text-decoration: none;
+  }
+  .bar li:hover {
+  background-color: #CFD8DC;
+} .menu__btn{
+    visibility: visible;
+}
+  #menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ nav .bar {
+  visibility: visible;
+  left: 0;
+}
+.logo-block{
+    visibility: hidden;
+}
+#allmicrosoft{
+    visibility: hidden;
+}
+ }
+
+
+    </style>
+</head>
+<body>
+    <div class="all-containers">
+<div class="logo" >
+    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" width="108" alt="microsoft-logo"> 
+</div>
+<div class="logo-block">
+        <p class="separator">&#10072</p>
+    <p class="surface"> <b> Surface</b></p>
+    </div>
+    <div class="burger">
+     <input id="menu__toggle" type="checkbox" />
+  <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+  <nav>
+      <ul class="bar">
+        <li class="symbol">Computers</li>
+    <li class="symbol">Computers for Busines</li>
+    <li class="symbol">Accessories</li>
+    <li class="symbol">Shop now</li>
+    <li class="sup">Support</li>
+    </ul>
+  </nav>
+    
+    </div>
+
+<nav >
+    <ul class="right-side-bar" >
+<li id="allmicrosoft" class="symbol">All Microsoft</li>
+<li class="search"> 
+    <img src="https://media.istockphoto.com/vectors/search-icon-vector-magnifier-glass-zoom-symbol-thin-line-design-vector-id1133992738?k=6&m=1133992738&s=170667a&w=0&h=6lQypD4O7SqH5IVN7YPn2pq0_oSxySj19zFBnbjO47Y=" width="27" alt="search">    
+</li>
+<li class="cart">
+    <img src="https://static.thenounproject.com/png/1074958-200.png" width="43" alt="cart">
+</li>
+<li class="registration">
+    <img src="https://github.com/AlexandraBash/AlexandraBash/blob/main/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-08-03%20%D0%B2%2009.15.15.png?raw=true " width="53" alt="registration">
+</li>
+    </ul>
+
+</nav>
+
+    </div>
+    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Surface-Book-3-Panel1-ImmersiveHero:VP4-1399x795" width="100%" alt="">
+</body>
+</html>
